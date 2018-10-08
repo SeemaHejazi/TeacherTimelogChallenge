@@ -81,7 +81,7 @@ class EntriesController extends Controller
         }
 
         // Update the Started Entry
-        return $this->update($entryId);
+        return $this->update($request, $entryId);
     }
 
     /**
@@ -98,10 +98,11 @@ class EntriesController extends Controller
     /**
      * Update the specified resource in storage.
      *
+     * @param  Request $request
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request = null, $id)
     {
         $entry = Entry::find($id);
 
