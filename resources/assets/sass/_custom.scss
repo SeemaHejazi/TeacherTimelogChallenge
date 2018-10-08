@@ -1,0 +1,38 @@
+#footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.radio-group label {
+    overflow: hidden;
+}
+
+.radio-group input {
+    /* This is on purpose for accessibility. Using display: hidden is evil.
+    This makes things keyboard friendly right out tha box! */
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top: -20px;
+}
+
+.radio-group .not-active {
+    color: #3276b1;
+    background-color: #fff;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.jumbotron p {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.jumbotron .lead {
+    font-size: 21px;
+}
