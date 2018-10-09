@@ -4,21 +4,27 @@ When a teacher arrives to work, they clock-in, when leave they clock-out, and th
 Using an MVC framework, build a very basic MVP of a clock in/out application, using traditional CRUD methods.
 
 I chose to use Laravel 5.6 which beautifully handles CRUD methodology. 
-</br>*The Model*: table name `entries` with columns `id`, `firstname`, `lastname`, `in_time`, `out_time` and `total_minutes`
 
-</br>*The Controllers*: PagesController controls the routing to pages. EntriesController contains all the main functionality:
-</br>`index()` : displays the listing of the entries 
-</br>`store()` : create and store new entries to db 
-</br>`edit()`: edit a specific entry
-</br>`destroy()`: delete a specific entry
-</br>`update()` : used to update an entry with the entered checkout time and total minutes worked.
+</br>## *The Model*: table name `entries` with columns `id`, `firstname`, `lastname`, `in_time`, `out_time` and `total_minutes`
 
-</br>*The Views*:
+</br>## *The Controllers*: 
+</br>PagesController controls the routing to pages. 
+</br>EntriesController contains all the main functionality:
+    </br>`index()` : displays the listing of the entries 
+    </br>`store()` : create and store new entries to db 
+    </br>`edit()`: edit a specific entry
+    </br>`destroy()`: delete a specific entry
+    </br>`update()` : used to update an entry with the entered checkout time and total minutes worked.
+
+</br>## *The Views*:
 </br>home.blade.php : the home page and clock in/clockout form.
 </br>index.blade.php : the entries listed blade, accessible at /entries.
 </br>edit/delete.blade.php : the edit and delete modals.
 
-
+<img width="1119" alt="home" src="https://user-images.githubusercontent.com/10931672/46647806-1423f580-cb60-11e8-95e8-3d20f34450f0.png">
+<img width="1116" alt="index" src="https://user-images.githubusercontent.com/10931672/46647807-1423f580-cb60-11e8-8e02-63bb18085e22.png">
+<img width="1182" alt="delete" src="https://user-images.githubusercontent.com/10931672/46647804-138b5f00-cb60-11e8-879b-c4a327944acf.png">
+<img width="1076" alt="edit" src="https://user-images.githubusercontent.com/10931672/46647805-1423f580-cb60-11e8-9b43-097d9fe1e182.png">
 
 -----------------------------------------------------------------------------------------------------------------------------
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
