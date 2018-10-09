@@ -18,9 +18,9 @@ I chose to use Laravel 5.6 which beautifully handles CRUD methodology.
     </br>`update()` : used to update an entry with the entered checkout time and total minutes worked.
 
 </br><strong> *The Views*: </strong>
-</br>home.blade.php : the home page and clock in/clockout form.
-</br>index.blade.php : the entries listed blade, accessible at /entries.
-</br>edit/delete.blade.php : the edit and delete modals.
+</br>`home.blade.php` : the home page and clock in/clockout form.
+</br>`index.blade.php` : the entries listed blade, accessible at /entries.
+</br>`edit/delete.blade.php` : the edit and delete modals.
 
 <img width="1119" alt="home" src="https://user-images.githubusercontent.com/10931672/46647806-1423f580-cb60-11e8-95e8-3d20f34450f0.png">
 <img width="1116" alt="index" src="https://user-images.githubusercontent.com/10931672/46647807-1423f580-cb60-11e8-8e02-63bb18085e22.png">
