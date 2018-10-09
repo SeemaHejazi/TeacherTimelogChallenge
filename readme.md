@@ -1,3 +1,30 @@
+##The Challenge
+
+When a teacher arrives to work, they clock-in, when leave they clock-out, and the platform keeps track of the time worked.
+Using an MVC framework, build a very basic MVP of a clock in/out application, using traditional CRUD methods.
+
+I chose to use Laravel 5.6 which beautifully handles CRUD methodology. 
+*The Model*: table name `entries` with columns `id`, `firstname`, `lastname`, `in_time`, `out_time` and `total_minutes`
+
+*The Controllers*: PagesController controls the routing to pages. EntriesController contains all the main functionality:
+`index()` : displays the listing of the entries 
+`store()` : create and store new entries to db 
+`edit()`: edit a specific entry
+`destroy()`: delete a specific entry
+`update()` : used to update an entry with the entered checkout time and total minutes worked.
+
+*The Views*:
+home.blade.php : the home page and clock in/clockout form.
+index.blade.php : the entries listed blade, accessible at /entries.
+edit/delete.blade.php : the edit and delete modals.
+
+
+<img src="demo/home">
+<img src="demo/index">
+<img src="demo/delete">
+<img src="demo/edit">
+
+-----------------------------------------------------------------------------------------------------------------------------
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
@@ -20,27 +47,6 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
-
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
 
 ## Security Vulnerabilities
 
