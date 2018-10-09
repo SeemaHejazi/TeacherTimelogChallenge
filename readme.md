@@ -4,25 +4,21 @@ When a teacher arrives to work, they clock-in, when leave they clock-out, and th
 Using an MVC framework, build a very basic MVP of a clock in/out application, using traditional CRUD methods.
 
 I chose to use Laravel 5.6 which beautifully handles CRUD methodology. 
-*The Model*: table name `entries` with columns `id`, `firstname`, `lastname`, `in_time`, `out_time` and `total_minutes`
+</br>*The Model*: table name `entries` with columns `id`, `firstname`, `lastname`, `in_time`, `out_time` and `total_minutes`
 
-*The Controllers*: PagesController controls the routing to pages. EntriesController contains all the main functionality:
-`index()` : displays the listing of the entries 
-`store()` : create and store new entries to db 
-`edit()`: edit a specific entry
-`destroy()`: delete a specific entry
-`update()` : used to update an entry with the entered checkout time and total minutes worked.
+</br>*The Controllers*: PagesController controls the routing to pages. EntriesController contains all the main functionality:
+</br>`index()` : displays the listing of the entries 
+</br>`store()` : create and store new entries to db 
+</br>`edit()`: edit a specific entry
+</br>`destroy()`: delete a specific entry
+</br>`update()` : used to update an entry with the entered checkout time and total minutes worked.
 
-*The Views*:
-home.blade.php : the home page and clock in/clockout form.
-index.blade.php : the entries listed blade, accessible at /entries.
-edit/delete.blade.php : the edit and delete modals.
+</br>*The Views*:
+</br>home.blade.php : the home page and clock in/clockout form.
+</br>index.blade.php : the entries listed blade, accessible at /entries.
+</br>edit/delete.blade.php : the edit and delete modals.
 
 
-<img src="demo/home">
-<img src="demo/index">
-<img src="demo/delete">
-<img src="demo/edit">
 
 -----------------------------------------------------------------------------------------------------------------------------
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
