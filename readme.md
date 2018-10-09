@@ -3,7 +3,9 @@
 When a teacher arrives to work, they clock-in, when leave they clock-out, and the platform keeps track of the time worked.
 Using an MVC framework, build a very basic MVP of a clock in/out application, using traditional CRUD methods.
 
-I chose to use Laravel 5.6 which beautifully handles CRUD methodology. 
+I chose to use Laravel 5.6 which beautifully handles CRUD methodology.
+
+Screenshots below, but please feel *super* free to download the two demo videos under `/demo`! :)  
 
 </br><strong> *The Model*: </strong>
     Table name `entries` with columns `id`, `firstname`, `lastname`, `in_time`, `out_time` and `total_minutes`
